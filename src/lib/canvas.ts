@@ -2,7 +2,7 @@ import type { Theme, CanvasGradientConfig, WeekData } from "./types";
 import { parseDate, isSameDay, formatShortDate } from "./utils";
 
 const W = 1080;
-const H = 1920;
+const H = 2400;
 const FONT = "Inter, system-ui, sans-serif";
 
 function createGradient(
@@ -86,7 +86,7 @@ export function renderWallpaper(
   const headerHeight = 56;
   const rowHeight = 68;
   const tableH = headerHeight + rowHeight * dayCount + 20;
-  const tableY = H - tableH - 80;
+  const tableY = H - tableH - 420;
 
   // Table background with rounded corners
   ctx.save();
